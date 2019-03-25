@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>All About Varanasi</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"> All About Varanasi</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="ghats.html">Ghats</a></li>
+        <li><a href="universities.html">Universities</a></li>
+        <li><a href="foodplaces.html">Food Places</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <img src="images/2.jpg" class="image1" alt="Snow" style="width:100%;">
+    <div class="centered">Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th century
+      B.C. Regarded as the spiritual capital of India, the city draws Hindu pilgrims who bathe in the Ganges River’s
+      sacred waters and perform funeral rites. </div>
+  </div>
+  <hr>
+  <div class="grid-container">
+    <div class="card">
+      <div class="bg-img">
+        <img src="images/gh01.jpg">
+      </div>
+      <div class="content">
+        <h4 class="h4colorhead">Ghats</h4>
+        <p> Ghats in Varanasi are riverfront steps leading to the banks of the River Ganges. The city has 88 ghats. Most
+          of the ghats are bathing and puja ceremony ghats, while two ghats are used exclusively as cremation sites.
+        </p>
+      </div>
+      <a href="ghats.html"><button class="btn">Know More</button></a>
+    </div>
+    <div class="card">
+      <div class="bg-img">
+        <img src="images/u3.jpg">
+      </div>
+      <div class="content">
+        <h4 class="h4colorhead">Universities</h4>
+        <p> Indian Institute of Technology, Varanasi. Institute of Medical Sciences, Banaras Hindu University (IMS BHU)
+          School of Management Sciences, Varanasi. Kashi Institute of Technology (KIT), Varanasi. SAMS Institute of
+          Hotel Management, Varanasi. Rajarshi School of Management & Technology (RSM), Varanasi. </p>
+      </div>
+      <a href="universities.html"><button class="btn">Know More</button></a>
+    </div>
+    <div class="card">
+      <div class="bg-img">
+        <img src="images/l01.jpg">
+      </div>
+      <div class="content">
+        <h4 class="h4colorhead">Food Places</h4>
+        <p> Varanasi is famous for its kachoris, chaat, lassi and, of course, paan. Varanasi is famous for its own style
+          of chaat: dahi bhalla, tamatar ki chaat and palak chaat. In the lane just beyond the famous Kashi Vishwanath
+          Temple is Kachori Gali. </p>
+      </div>
+      <a href="foodplaces.html"><button class="btn">Know More</button></a>
+    </div>
+  </div>
+  <div id="map"></div>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h1>All About Varanasi</h1>
+          <p class="text-justify"> Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th
+            century B.C. Regarded as the spiritual capital of India, the city draws Hindu pilgrims who bathe in the
+            Ganges River’s sacred waters and perform funeral rites. </p>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by
+            <a href="#">Apoorv</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fab fa-tumblr"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of pos
+      var pos = {
+        lat: 25.3176,
+        lng: 82.9739
+      };
+
+      
+      // The map, centered at pos
+      var map = new google.maps.Map(
+        document.getElementById('map'), {
+          zoom: 15,
+          center: pos
+        });
+      // The marker, positioned at pos
+      var marker = new google.maps.Marker({
+        position: pos,
+        map: map
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASFSGSrxEXyjwZSqMyzRJBbfq_eFutui8&callback=initMap"
+    async defer></script>
+
+</body>
+
+</html>
