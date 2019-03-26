@@ -23,7 +23,7 @@ body {
 
 .centered {
   color: rgb(255, 255, 255);
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 400;
   position: absolute;
   top: 50%;
@@ -411,3 +411,23 @@ footer {
   font-size: 2em;
   padding: 20px;
 }
+
+@media (max-width:750px) {
+  .centered {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width:651px) {
+  .centered {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width:551px) {
+  .centered {
+    font-size: 1em;
+  }
+}
+
+
